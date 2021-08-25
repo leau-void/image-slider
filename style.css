@@ -2,6 +2,7 @@ body {
   margin: 0;
   width: 100%;
   height: 100%;
+  background: grey;
 }
 
 .main-content {
@@ -33,6 +34,7 @@ body {
   padding: 0;
   left: 0;
   background: rgb(5, 5, 5);
+  transition: left 1s ease-in-out;
   /* left: -70vw; */
 }
 
@@ -43,14 +45,6 @@ body {
   padding: 0;
   border: none;
   object-fit: cover;
-}
-
-.slides-container :first-child {
-  background: red;
-}
-
-.slides-container :nth-child(2) {
-  background: orange;
 }
 
 .side-arrows {
@@ -64,6 +58,11 @@ body {
   text-align: center;
   opacity: 0.8;
   color: white;
+}
+
+.side-arrows:active {
+  color: rgb(5, 5, 5);
+  background-color: white;
 }
 
 .left-arrow {
